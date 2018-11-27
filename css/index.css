@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+.wrap>ul{
+    position: absolute;
+    top: 2rem;
+    right: 7.5rem;
+    overflow: hidden;
+}
+.wrap>ul li{
+    float: left;
+}
+.wrap>ul a{
+    color: #fff;
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+}
+.content1,.content2{
+    font-size: 1.5rem;
+    position: absolute;
+    color: #fff;
+    top: 44%;
+    left: 50%;
+    margin-left: -22.5rem;
+    width: 45rem;
+    text-align: center;
+}
+.top-text{
+    font-size: 2.5rem;
+}
+.middle-text{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.bottom-text{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.center-text{
+    margin-top: 5rem;
+    font-size: 2rem;
+}

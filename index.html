@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <video src="images/video.mp4" autoplay loop width="100%"></video>
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="contactus.html">联系我们</a></li>
+        <li><a href="news.html">新闻资讯</a></li>
+    </ul>
+    <div class="content1">
+        <p class="top-text">与时尚同在，与环保同行</p>
+        <p class="middle-text">体验轿跑舒适，酷享低碳时尚</p>
+        <p class="bottom-text">城市的守护者，生活的开拓者，你我的新选择</p>
+    </div>
+    <div class="content2" style="display: none">
+        <p class="center-text">绿色征途，在脚下，至远方</p>
+    </div>
+</div>
+<script>
+    setInterval(()=>{
+        $(".content1").toggle();
+        $(".content2").toggle();
+    },10000);
+</script>
+</body>
+</html>
