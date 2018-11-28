@@ -35,7 +35,6 @@ a {
 
 .main > ul {
     font-family: 'NOTOSANSCJK-REGULAR','Microsoft YaHei' ;
-
     position: absolute;
     top: 6%;
     right: 8%;
@@ -133,8 +132,8 @@ a {
 .message span {
     color: #14318f;
     font-size: 1.5rem;
-    padding-left: 40px;
-    background: no-repeat;
+    padding-left: 30px;
+    background: no-repeat left center;
     background-size: 23px;
 }
 
