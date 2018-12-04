@@ -46,16 +46,17 @@ body,html{
     height:100%;
     overflow-x:hidden;
     overflow-y:visible;
+    font-size:16px;
 }
 .newsHeader{
     text-align: left;
     height:37%;
-    background: url('../images/news.png') no-repeat center 0;
+    background: url('../images/news.jpg') no-repeat center 0;
     background-size: cover;
 }
 .text{
-    padding-left:200px;
-    padding-top:120px;
+    padding-left:12rem;
+    padding-top:4.2rem;
     color:rgb(255, 255, 253);
 }
 .navigation{
@@ -85,7 +86,7 @@ a:link,a:visited{
 }
 .bigTitle{
     font-family: NotoSansCJK-Medium-5,sans-serif;
-    font-size:2.5em;
+    font-size:2.5rem;
     font-weight: bold;
     margin-bottom:17px;
 }
