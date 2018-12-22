@@ -10,3 +10,39 @@
     font-family: 'NOTOSANSCJK-BOLD';
     src: url('../fonts/NOTOSANSCJK-BOLD-6.OTF');
 }
+/*@font-face {
+    font-family: "NOTOSANSCJK-BOLD";
+    src: url("../fonts/Gotham-Rounded-Book-2.woff") format("woff"),
+    url("../fonts/Gotham-Rounded-Book-2.ttf") format("truetype"),
+    url("../fonts/Gotham-Rounded-Book-2.eot") format("embedded-opentype"),
+    url("../fonts/Gotham-Rounded-Book-2.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}*/
+@font-face {
+    font-family: "Gotham-Rounded-Book-2";
+    src: url("../fonts/Gotham-Rounded-Book-2.woff") format("woff"),
+    url("../fonts/Gotham-Rounded-Book-2.ttf") format("truetype"),
+    url("../fonts/Gotham-Rounded-Book-2.eot") format("embedded-opentype"),
+    url("../fonts/Gotham-Rounded-Book-2.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NotoSansCJK-Regular-1";
+    src: url("../fonts/SourceHanSansCN-Regular-Alphabetic.woff2") format("woff2"),
+    url("../fonts/SourceHanSansCN-Regular-Alphabetic.woff") format("woff"),
+    url("../fonts/SourceHanSansCN-Regular-Alphabetic.ttf") format("truetype"),
+    url("../fonts/SourceHanSansCN-Regular-Alphabetic.eot") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NotoSansCJK-Medium-5";
+    src: url("../fonts/SourceHanSansCN-Medium-Alphabetic.woff2") format("woff2"),
+    url("../fonts/SourceHanSansCN-Medium-Alphabetic.woff") format("woff"),
+    url("../fonts/SourceHanSansCN-Medium-Alphabetic.ttf") format("truetype"),
+    url("../fonts/SourceHanSansCN-Medium-Alphabetic.eot") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}

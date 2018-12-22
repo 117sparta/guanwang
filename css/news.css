@@ -1,30 +1,27 @@
 @font-face {
     font-family: "NotoSansCJK-Regular-1";
-    src: url("../fonts/NotoSansCJK-Regular-1.woff2") format("woff2"),
-    url("../fonts/NotoSansCJK-Regular-1.woff") format("woff"),
-    url("../fonts/NotoSansCJK-Regular-1.ttf") format("truetype"),
-    url("../fonts/NotoSansCJK-Regular-1.eot") format("embedded-opentype"),
-    url("../fonts/NotoSansCJK-Regular-1.svg") format("svg");
+    src: url("../fonts/SourceHanSansCN-Regular-Alphabetic.woff2") format("woff2"),
+    url("../fonts/SourceHanSansCN-Regular-Alphabetic.woff") format("woff"),
+    url("../fonts/SourceHanSansCN-Regular-Alphabetic.ttf") format("truetype"),
+    url("../fonts/SourceHanSansCN-Regular-Alphabetic.eot") format("embedded-opentype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "NotoSansCJK-Medium-5";
-    src: url("../fonts/NotoSansCJK-Medium-5.woff2") format("woff2"),
-    url("../fonts/NotoSansCJK-Medium-5.woff") format("woff"),
-    url("../fonts/NotoSansCJK-Medium-5.ttf") format("truetype"),
-    url("../fonts/NotoSansCJK-Medium-5.eot") format("embedded-opentype"),
-    url("../fonts/NotoSansCJK-Medium-5.svg") format("svg");
+    src: url("../fonts/SourceHanSansCN-Medium-Alphabetic.woff2") format("woff2"),
+    url("../fonts/SourceHanSansCN-Medium-Alphabetic.woff") format("woff"),
+    url("../fonts/SourceHanSansCN-Medium-Alphabetic.ttf") format("truetype"),
+    url("../fonts/SourceHanSansCN-Medium-Alphabetic.eot") format("embedded-opentype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "NotoSansCJK-Thin-2";
-    src: url("../fonts/NotoSansCJK-Thin-2.woff2") format("woff2"),
-    url("../fonts/NotoSansCJK-Thin-2.woff") format("woff"),
-    url("../fonts/NotoSansCJK-Thin-2.ttf") format("truetype"),
-    url("../fonts/NotoSansCJK-Thin-2.eot") format("embedded-opentype"),
-    url("../fonts/NotoSansCJK-Thin-2.svg") format("svg");
+    src: url("../fonts/SourceHanSansCN-Normal-Alphabetic.woff2") format("woff2"),
+    url("../fonts/SourceHanSansCN-Normal-Alphabetic.woff") format("woff"),
+    url("../fonts/SourceHanSansCN-Normal-Alphabetic.ttf") format("truetype"),
+    url("../fonts/SourceHanSansCN-Normal-Alphabetic.eot") format("embedded-opentype");
     font-weight: normal;
     font-style: normal;
 }

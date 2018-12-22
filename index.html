@@ -6,15 +6,38 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/fonts.css">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
-<div class="wrap">
-    <video src="images/video.mp4" autoplay loop width="100%"></video>
-    <ul>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="contactus.html">联系我们</a></li>
-        <li><a href="news.html">新闻资讯</a></li>
-    </ul>
+<div id="wrap">
+    <div id="videoWrapper">
+        <video  id="videoEle" src="images/highway-loop.mp4" autoplay muted="muted"loop width="100%"></video>
+        <div class="data-bulletin">
+            <div class="dataBlock">
+                <h3>充电次数（次）</h3>
+                <span>420</span>
+            </div>
+            <div class="dataBlock">
+                <h3>充电电量（度）</h3>
+                <span>10670</span>
+            </div>
+            <div class="dataBlock">
+                <h3>充电时间（分）</h3>
+                <span>31235</span>
+            </div>
+        </div>
+    </div>
+    <nav class="top-nav">
+        <div class="phone">
+            <img id="phoneIcon" src="images/phone1-black.png" class="phoneIcon" />
+            <span>020-1234567</span>
+        </div>
+        <div class="linkAndMail">
+            <a id="linkToNews" class="link-scroll-up" href="news.html">新闻资讯</a>
+            <img id="mailIcon" class="mailIcon" src="images/mail-black.png" class="icon"/>
+            qwerfdghcn@163.com
+        </div>
+    </nav>
     <div class="content1">
         <p class="top-text">与时尚同在，与环保同行</p>
         <p class="middle-text">体验轿跑舒适，酷享低碳时尚</p>
@@ -23,7 +46,30 @@
     <div class="content2" style="display: none">
         <p class="center-text">绿色征途，在脚下，至远方</p>
     </div>
-</div>
+    <div class="aboutUsTitle">
+        <div class="aboutUsText">
+            About US
+        </div>
+    </div>
+    <div class="content">
+        <div class="message">
+            <span style="background-image: url(images/address.png);">公司地址</span>
+            <p>广州市XX区XX街道XX号</p>
+        </div>
+        <div class="message">
+            <span style="background-image: url(images/coperation.png);">商务合作</span>
+            <p>asdfghjk@163.com</p>
+        </div>
+        <div class="message advice">
+            <span style="background-image: url(images/idea.png);">投诉与建议</span>
+            <p>phone：020-7654321</p>
+            <p>Email：qwerfdghcn@163.com</p>
+        </div>
+    </div><!--end div content-->
+    <div>
+        <img src="images/erweima.png" alt="" style="width: 100%;">
+    </div>
+</div><!--end div wrap-->
 <script>
     setInterval(()=>{
         $(".content1").toggle();
