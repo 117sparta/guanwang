@@ -116,7 +116,7 @@ li{
 .dataBlock{
     display:inline-block;
     vertical-align:top;
-    margin:0 5rem;
+    margin:0 2rem;
 }
 .dataBlock > h3{
     margin-bottom:1rem;
