@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ac72a19-7ea3-4070-b90c-e48f3a96aa8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/news.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Medium-5.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Medium-5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Medium-5.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Medium-5.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Medium-5.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Regular-1.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Regular-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Regular-1.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Regular-1.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Regular-1.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Thin-2.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Thin-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Thin-2.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Thin-2.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NotoSansCJK-Thin-2.woff2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -111,7 +90,7 @@
           <entry key="css" value="2785" />
           <entry key="html" value="1043" />
           <entry key="js" value="1978" />
-          <entry key="txt" value="23" />
+          <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -119,18 +98,18 @@
           <entry key="CSS" value="2785" />
           <entry key="HTML" value="1043" />
           <entry key="JavaScript" value="1978" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="PLAIN_TEXT" value="37" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-162">
-              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="126">
+              <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#3;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -141,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+            <state relative-caret-position="2088">
+              <caret line="116" column="25" lean-forward="true" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -173,9 +152,9 @@
         <option value="$PROJECT_DIR$/css/news.css" />
         <option value="$PROJECT_DIR$/news.html" />
         <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/fonts.css" />
         <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -203,11 +182,6 @@
             <path>
               <item name="guanwang" type="b2602c69:ProjectViewProjectNode" />
               <item name="guanwang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guanwang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guanwang" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="guanwang" type="b2602c69:ProjectViewProjectNode" />
@@ -266,7 +240,7 @@
       <workItem from="1545292192027" duration="9592000" />
       <workItem from="1545397022843" duration="7165000" />
       <workItem from="1545474263901" duration="433000" />
-      <workItem from="1545474781050" duration="4023000" />
+      <workItem from="1545474781050" duration="5420000" />
     </task>
     <task id="LOCAL-00001" summary="新闻资讯进行字体更改">
       <created>1543667518927</created>
@@ -289,14 +263,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543931799419</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="将主页和联系我们页面进行合并">
+      <created>1545478931483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545478931483</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36057000" />
+    <option name="totallyTimeSpent" value="37454000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20238096" />
@@ -327,7 +308,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新闻资讯进行字体更改" />
     <MESSAGE value="稍微修改了一下布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="稍微修改了一下布局" />
+    <MESSAGE value="将主页和联系我们页面进行合并" />
+    <option name="LAST_COMMIT_MESSAGE" value="将主页和联系我们页面进行合并" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json" />
@@ -397,23 +379,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="116" column="25" lean-forward="true" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        <state relative-caret-position="126">
+          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#3;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#4;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
         </state>
       </provider>
     </entry>
