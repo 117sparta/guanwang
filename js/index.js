@@ -19,34 +19,10 @@ window.onscroll = function () {
     let t = document.documentElement.scrollTop || document.body.scrollTop;
     let navList = document.getElementsByClassName("top-nav");
     let videoEle = document.getElementById("videoEle");
-    let phoneIcon = document.getElementById("phoneIcon");
-    let mailIcon = document.getElementById("mailIcon");
-    let link = document.getElementById("linkToNews");
-    let diviLine1 = videoEle.clientHeight/4;
-    let diviLine2 = videoEle.clientHeight-videoEle.clientHeight/4;
-    if(t>=diviLine1) {
-        navList[0].style.color = "white";
-        phoneIcon.src="images/phone1-white.png";
-        link.className="link-scroll-down";
-        mailIcon.src="images/mail-light.png";
+    if(t>videoEle.clientHeight){
+        navList[0].style.backgroundColor="#110c1e";
     }
-    else {
-        navList[0].style.color="black";
-        phoneIcon.src="images/phone1-black.png";
-        link.className="link-scroll-up";
-        mailIcon.src="images/mail-black.png";
-    }
-    if(t>=diviLine2){
-        navList[0].style.backgroundColor="white";
-        navList[0].style.color = "black";
-        phoneIcon.src="images/phone1-black.png";
-        mailIcon.src="images/mail-black.png";
-        link.className="link-scroll-up";
-    } else if(t>=diviLine1 && t<diviLine2) {
-        navList[0].style.backgroundColor = "transparent";
-        navList[0].style.color = "white";
-        phoneIcon.src="images/phone1-white.png";
-        mailIcon.src="images/mail-light.png";
-        link.className="link-scroll-down";
+    else if(t<videoEle.clientHeight){
+        if(navList[0].style) navList[0].removeAttribute("style");
     }
 };

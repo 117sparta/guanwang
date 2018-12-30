@@ -11,64 +11,135 @@
 <body>
 <div id="wrap">
     <div id="videoWrapper">
-        <video  id="videoEle" src="images/highway-loop.mp4" autoplay muted="muted" loop width="100%"></video>
-        <div class="data-bulletin">
-            <div class="dataBlock">
-                <h3>充电次数（次）</h3>
-                <span>420</span>
-            </div>
-            <div class="dataBlock">
-                <h3>充电电量（度）</h3>
-                <span>10670</span>
-            </div>
-            <div class="dataBlock">
-                <h3>充电时间（分）</h3>
-                <span>31235</span>
-            </div>
+        <video  id="videoEle" src="./images/highway-loop.mp4" autoplay muted="muted" loop width="100%"></video>
+        <div class="content1">
+            <p class="top-text">与时尚同在，与环保同行</p>
+            <p class="middle-text">体验轿跑舒适，酷享低碳时尚</p>
+            <p class="bottom-text">城市的守护者，生活的开拓者，你我的新选择</p>
+        </div>
+        <div class="content2" style="display: none">
+            <p class="center-text">绿色征途，在脚下，至远方</p>
         </div>
     </div>
     <nav class="top-nav">
         <div class="phone">
-            <img id="phoneIcon" src="images/phone1-black.png" class="phoneIcon" />
+            <img id="phoneIcon" src="./images/phone.png" class="phoneIcon" />
             <span>020-1234567</span>
         </div>
         <div class="linkAndMail">
-            <a id="linkToNews" class="link-scroll-up" href="news.html">新闻资讯</a>
-            <img id="mailIcon" class="mailIcon" src="images/mail-black.png"/>
-            qwerfdghcn@163.com
+            <img id="mailIcon" class="mailIcon" src="./images/mail.png"/>
+            <span>qwerfdghcn@163.com</span>
         </div>
     </nav>
-    <div class="content1">
-        <p class="top-text">与时尚同在，与环保同行</p>
-        <p class="middle-text">体验轿跑舒适，酷享低碳时尚</p>
-        <p class="bottom-text">城市的守护者，生活的开拓者，你我的新选择</p>
-    </div>
-    <div class="content2" style="display: none">
-        <p class="center-text">绿色征途，在脚下，至远方</p>
-    </div>
-    <div class="aboutUsTitle">
-        <div class="aboutUsText">
-            About US
+    <div class="title">
+        <div class="text">
+            ABOUT US
         </div>
     </div>
     <div class="content">
-        <div class="message">
-            <span style="background-image: url(images/address.png);">公司地址</span>
-            <p>广州市XX区XX街道XX号</p>
-        </div>
-        <div class="message">
-            <span style="background-image: url(images/coperation.png);">商务合作</span>
-            <p>asdfghjk@163.com</p>
-        </div>
-        <div class="message advice">
-            <span style="background-image: url(images/idea.png);">投诉与建议</span>
-            <p>phone：020-7654321</p>
-            <p>Email：qwerfdghcn@163.com</p>
-        </div>
+        <p class="leftParag">
+            Letraset sheets containing Lorem Ipsum passages, and more <br/>
+            recently with desktop publishing software
+        </p>
+        <p class="rightParag">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+            unchanged.
+        </p>
     </div><!--end div content-->
     <div>
-        <img src="images/erweima.png" alt="" style="width: 100%;">
+        <div id="dataBulletin">
+            <div class="outer-frame">
+                <div class="inner-content">
+                    <div class="dataBlock">
+                        <img class="dataIcon" src="./images/chargingData.png" />
+                        <h2>充电次数（次）</h2>
+                        <h2 class="number">420</h2>
+                    </div>
+                    <div class="dataBlock">
+                        <img class="dataIcon" src="./images/volumn.png" />
+                        <h2>充电电量（度）</h2>
+                        <h2 class="number">10670</h2>
+                    </div>
+                    <div class="dataBlock">
+                        <img class="dataIcon" src="./images/time.png" />
+                        <h2>充电时间（分）</h2>
+                        <h2 class="number">31235</h2>
+                    </div>
+                    <div class="dataBlock">
+                        <img class="dataIcon" src="./images/chargeGun.png" />
+                        <h2>充电枪数（把）</h2>
+                        <h2 class="number">200</h2>
+                    </div>
+                </div><!--end div inner-content-->
+            </div><!--end div outer-frame-->
+        </div><!--end div dataBulletin -->
     </div>
+    <div class="timeTree">
+        <div class="news">
+            <div class="text">
+                新闻资讯
+            </div>
+        </div>
+        <div class="leftContent">
+            <p class="leftFirstTip">运营平台搭建完成</p>
+            <p class="leftSecondTip">与广州体育馆公交总站搭建大型充电站</p>
+            <p class="leftThirdTip">团队组建完成</p>
+        </div>
+        <div class="middleContent">
+            <span class="firstLi">3月3日</span>
+            <span class="secondLi">4月6日</span>
+            <span class="thirdLi">12月2日</span>
+            <span class="fourthLi">2月3日</span>
+            <span class="fifthLi">9月22日</span>
+            <span class="sixthLi">12月1日</span>
+        </div>
+        <div class="rightContent">
+            <p class="rightFirstTip">运营平台正式上线</p>
+            <p class="rightSecondTip">黄村公交维修厂充电站验收完成，正式投入运营</p>
+            <p class="rightThirdTip">12月与公交集团达成协议在黄村公交维修厂，建设公交汽车专用充电</p>
+        </div>
+    </div><!--end div timeTree -->
+    <footer>
+        <div class="footerSide">
+            <div class="footerBlock">
+                <div class="footerBlockTitle">
+                    <span class="footerBlockTitleText">联系方式</span>
+                </div>
+                <div class="message">tel&nbsp;:&nbsp;020-11223344</div>
+                <div class="message">mail&nbsp;:&nbsp;skldi@qq.com</div>
+            </div>
+            <div class="footerBlock">
+                <div class="footerBlockTitle">
+                    <span class="footerBlockTitleText">公司地址</span>
+                </div>
+                <div class="message">广州市XX区XX街道XX号</div>
+            </div>
+        </div>
+        <div class="footerMiddle">
+            <div class="contactUSTitle">
+                <span class="contactUSText">联系我们</span>
+            </div>
+            <img src="./images/qtcode.png"/>
+            <div id="purpose">“路行虽远，不忘初心”</div>
+        </div>
+        <div class="footerSide">
+            <div class="footerBlock">
+                <div class="footerBlockTitle">
+                    <span class="footerBlockTitleText">投诉与建议</span>
+                </div>
+                <div class="message">phone&nbsp;:&nbsp;020-7654321</div>
+                <div class="message">mail&nbsp;:&nbsp;qwef@163.com</div>
+            </div>
+            <div class="footerBlock">
+                <div class="footerBlockTitle">
+                    <span class="footerBlockTitleText">商务合作</span>
+                </div>
+                <div class="message">dskdfs@163.com</div>
+            </div>
+        </div>
+    </footer>
 </div><!--end div wrap-->
 <script>
     setInterval(()=>{

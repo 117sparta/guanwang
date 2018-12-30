@@ -1,28 +1,35 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:"Microsoft YaHei",sans-serif;
 }
 a{
     text-decoration: none;
     color: #000;
 }
-li{
-    list-style: none;
+html{
+    font-size:10px;
 }
-/*body{
-    font-size:16px;
-}*/
 .phone{
     display:inline-block;
     float:left;
+    vertical-align:center;
 }
+.phone>span{
+    font-size:1.4rem;
+}
+
 .phoneIcon,.mailIcon{
     display:inline-block;
-    width:1.6rem;
-    height:1.6rem;
+    vertical-align:middle;
+    width:3rem;
+    height:3rem;
 }
 .phoneIcon{
     margin-right:2rem;
+    transform:rotate(90deg);
+    border-radius:50%;
+    border:1px solid #f2f4ca;
 }
 .mailIcon{
     margin-right:0.5rem;
@@ -31,19 +38,16 @@ li{
     display:inline-block;
     float:right;
     text-align:right;
+    vertical-align:center;
+    transition:letter-spacing 1s;
 }
-.link-scroll-up,
-.link-scroll-down{
-    margin-right:4rem;
-    color:black;
-    font-size:1.3rem;
-}
-.link-scroll-down:hover,
-.link-scroll-up:hover{
+.linkAndMail:hover{
+    letter-spacing:2px;
+    cursor:pointer;
     color:#09bb59;
 }
-.link-scroll-down{
-    color:white;
+.linkAndMail>span{
+    font-size:1.4rem;
 }
 #videoWrapper{
     position:relative;
@@ -54,24 +58,16 @@ li{
     left:0;
     padding:2rem 6rem;
     width:90%;
-    color:black;
+    color:white;
     font-size:1.1rem;
-    box-shadow:0 0 12px black;
+    box-shadow:0 0 5px black;
     font-family: 'NotoSansCJK-Medium-5','Microsoft YaHei',sans-serif;
+    background-color: #d4d6d5;
+    background-color:rgba(212,214,213,0.65);
+    z-index:4;
 }
 .top-nav-scroll{
     color:white;
-}
-.top-nav>ul{
-    overflow: hidden;
-}
-.top-nav>ul li{
-    float: left;
-}
-.top-nav>ul a{
-    color: #fff;
-    margin-left: 2.5rem;
-    font-size: 1.5rem;
 }
 .content1,.content2{
     width: 500px;
@@ -85,77 +81,211 @@ li{
 }
 .top-text{
     font-family: "NotoSansCJK-Medium-5",'Microsoft YaHei',sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 .middle-text{
     margin-top: 20px;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 .bottom-text{
     margin-top: 30px;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 .center-text{
     margin-top: 60px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: "NotoSansCJK-Medium-5",'Microsoft YaHei',sans-serif;
 }
-.data-bulletin{
-    position:absolute;
-    font-family:'NotoSansCJK-Medium-5',SimHei,sans-serif;
-    bottom:1rem;
-    left:4rem;
-    right: 4rem;
-    background-color: white;
-    border-radius:10px;
-    padding:2rem;
-    font-size:2rem;
-    text-align:center;
-    box-shadow:0 0 1rem #aaa;
-}
-.dataBlock{
-    display:inline-block;
-    vertical-align:top;
-    margin:0 2rem;
-}
-.dataBlock > h3{
-    margin-bottom:1rem;
-    color: #bf7d3d;
-}
-.dataBlock > span{
-    font-family:"Gotham-Rounded-Book-2",sans-serif;
-    color: #55be49;
-}
-.aboutUsTitle{
+.title{
     text-align:center;
     padding:4rem;
 }
-.aboutUsText{
-    font-size:2.1rem;
+.text{
+    font-size:4rem;
+    font-weight:bold;
     border:2px double #ccc;
     display:inline-block;
-    padding:1rem;
+    padding:0.2rem 1.2rem;
 }
 .content{
-    /*padding-left:2rem;*/
+    padding:2rem;
+    margin-bottom:2rem;
 }
-.message{
+.leftParag,.rightParag{
+    display:inline-block;
+    font-size:2.2rem;
+}
+.leftParag{
+    text-align:right;
+    width:48%;
+    margin-right:2rem;
+}
+.rightParag{
+    width:45%;
+}
+#dataBulletin{
+    background-image: url("../images/databg.png");
+    padding:2rem 7rem;
+    background-size:cover;
+    margin:0 1rem;
+}
+.outer-frame{
+    border:5px solid white;
+    padding:0.6rem;
+}
+.inner-content{
+    text-align:center;
+    background-color:white;
+    padding:2rem;
+}
+.dataIcon{
+    width:4rem;
+    height:4rem;
+}
+.dataBlock{
+    display:inline-block;
+    margin:0 5rem;
+}
+.dataBlock h2{
+    font-size:2rem;
+    margin:0.6rem 0;
+}
+.number{
+    color: #351f67;
+    font-size:3rem;
+}
+.timeTree{
+    position:relative;
+    background:url("../images/timeTree.png") no-repeat;
+    background-size:contain;
+    height:62rem;
+}
+.news{
+    text-align:center;
+    margin-top:10rem;
+}
+.leftContent,.rightContent,.middleContent{
     display:inline-block;
     vertical-align:top;
-    width:20%;
-    margin-left:20%;
-    /*margin-left:15.4%;*/
-    margin-bottom:6rem;
 }
-.message > span{
-    color: #14318f;
-    font-size: 1.5rem;
-    padding-left: 30px;
-    background: no-repeat left center;
-    background-size: 23px;
+.leftContent{
+    text-align:right;
+    position:absolute;
+    top:23.5rem;
+    left:6%;
+    font-size:2rem;
 }
-.message > p {
-    color: #3099ea;
-    font-size: 1.5rem;
-    margin-top: 2px;
+.leftSecondTip{
+    margin-top:7.2rem;
+}
+.leftThirdTip{
+    margin-top:6.7rem;
+}
+
+.rightContent{
+    position:absolute;
+    top:21.4rem;
+    right:4.1%;
+    font-size:2rem;
+}
+.rightFirstTip{
+    max-width:300px;
+}
+.rightSecondTip{
+    max-width:300px;
+    margin-top:5rem;
+}
+.rightThirdTip{
+    max-width:360px;
+    margin-top:5rem;
+}
+/*.leftContent p,.rightContent p{
+    max-width:300px;
+}*/
+.middleContent{
+    font-size:2.2rem;
+    font-weight:bold;
+}
+.middleContent ul{
+    list-style:none;
+    position:absolute;
+    top:35.5%;
+    left:40%;
+}
+.firstLi{
+    position:absolute;
+    top:34.5%;
+    left:40%;
+}
+.secondLi{
+    position:absolute;
+    top:32%;
+    left:56%;
+}
+.thirdLi{
+    position:absolute;
+    top:50%;
+    left:39%;
+}
+.fourthLi{
+    position:absolute;
+    top:43.5%;
+    left:56%;
+}
+.fifthLi{
+    position:absolute;
+    top:65%;
+    left:39%;
+}
+.sixthLi{
+    position:absolute;
+    top:57.5%;
+    left:56%;
+}
+footer{
+    background-color:#212121;
+    padding-top:3rem;
+    padding-bottom:0.5rem;
+    text-align:center;
+}
+.contactUSTitle{
+    margin-bottom:2rem;
+}
+.contactUSText{
+    display:inline-block;
+    padding:0 3rem;
+    color:white;
+    font-weight:bold;
+    font-size:3.4rem;
+    border:1px solid #b5b5b5;
+}
+.footerMiddle,.footerSide{
+    display:inline-block;
+    vertical-align:top;
+    text-align:center;
+}
+.footerBlock{
+    margin:2rem 4rem;
+}
+.footerBlockTitle{
+    margin-bottom:0.5rem;
+    font-size:2rem;
+}
+.footerBlockTitleText{
+    display:inline-block;
+    padding:0 1rem;
+    border:1px solid #b5b5b5;
+    color:#00ffff;
+}
+.message{
+    margin:1rem 0;
+    font-size:1.7rem;
+    color:white;
+    letter-spacing:1px;
+}
+#purpose{
+    color:#dfdfdf;
+    font-size:2.5rem;
+    font-weight:bold;
+    margin-top:2rem;
 }
