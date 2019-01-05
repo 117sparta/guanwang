@@ -1,291 +1,518 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:"Microsoft YaHei",sans-serif;
+    font-family: "Microsoft YaHei", sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
-html{
-    font-size:10px;
-}
-.phone{
-    display:inline-block;
-    float:left;
-    vertical-align:center;
-}
-.phone>span{
-    font-size:1.4rem;
+
+html, body {
+    font-size: 10px;
+    width: 100%;
 }
 
-.phoneIcon,.mailIcon{
-    display:inline-block;
-    vertical-align:middle;
-    width:3rem;
-    height:3rem;
+.video-wrapper {
+    width: 70%;
+    margin: auto;
 }
-.phoneIcon{
-    margin-right:2rem;
-    transform:rotate(90deg);
-    border-radius:50%;
-    border:1px solid #f2f4ca;
+
+.phone {
+    display: inline-block;
+    float: left;
+    vertical-align: center;
 }
-.mailIcon{
-    margin-right:0.5rem;
+
+.phone > span {
+    font-size: 1.4rem;
 }
-.linkAndMail{
-    display:inline-block;
-    float:right;
-    text-align:right;
-    vertical-align:center;
-    transition:letter-spacing 1s;
+
+.phoneIcon, .mailIcon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3rem;
+    height: 3rem;
 }
-.linkAndMail:hover{
-    letter-spacing:2px;
-    cursor:pointer;
-    color:#09bb59;
+
+.phoneIcon {
+    margin-right: 2rem;
+    transform: rotate(90deg);
+    border-radius: 50%;
+    border: 1px solid #f2f4ca;
 }
-.linkAndMail>span{
-    font-size:1.4rem;
+
+.mailIcon {
+    margin-right: 0.5rem;
 }
-#videoWrapper{
-    position:relative;
+
+.linkAndMail {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    vertical-align: center;
+    transition: letter-spacing 1s;
 }
-.top-nav{
-    position:fixed;
-    top:0;
-    left:0;
-    padding:2rem 6rem;
-    width:90%;
-    color:white;
-    font-size:1.1rem;
-    box-shadow:0 0 5px black;
-    font-family: 'NotoSansCJK-Medium-5','Microsoft YaHei',sans-serif;
+
+.linkAndMail:hover {
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #09bb59;
+}
+
+.linkAndMail > span {
+    font-size: 1.4rem;
+}
+
+#videoWrapper {
+    position: relative;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 6rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1.1rem;
+    box-shadow: 0 0 5px black;
+    font-family: 'NotoSansCJK-Medium-5', 'Microsoft YaHei', sans-serif;
     background-color: #d4d6d5;
-    background-color:rgba(212,214,213,0.65);
-    z-index:4;
+    background-color: rgba(212, 214, 213, 0.65);
+    z-index: 4;
 }
-.top-nav-scroll{
-    color:white;
+
+.top-nav-scroll {
+    color: white;
 }
-.content1,.content2{
-    width: 500px;
+
+.content1, .content2 {
+    width: 60%;
+    height: 150px;
     position: absolute;
     color: #fff;
-    top: 46%;
+    top: 50%;
     left: 50%;
-    margin-left: -250px;
+    margin-left: -30%;
+    margin-top: -75px;
     text-align: center;
-    font-family: 'NotoSansCJK-Regular-1','Microsoft YaHei',sans-serif;
+    font-family: 'NotoSansCJK-Regular-1', 'Microsoft YaHei', sans-serif;
 }
-.top-text{
-    font-family: "NotoSansCJK-Medium-5",'Microsoft YaHei',sans-serif;
+
+.top-text {
+    font-family: "NotoSansCJK-Medium-5", 'Microsoft YaHei', sans-serif;
     font-size: 3rem;
 }
-.middle-text{
+
+.middle-text {
     margin-top: 20px;
     font-size: 2rem;
 }
-.bottom-text{
+
+.bottom-text {
     margin-top: 30px;
     font-size: 1.7rem;
 }
-.center-text{
+
+.center-text {
     margin-top: 60px;
     font-size: 3rem;
-    font-family: "NotoSansCJK-Medium-5",'Microsoft YaHei',sans-serif;
-}
-.title{
-    text-align:center;
-    padding:4rem;
-}
-.text{
-    font-size:4rem;
-    font-weight:bold;
-    border:2px double #ccc;
-    display:inline-block;
-    padding:0.2rem 1.2rem;
-}
-.content{
-    padding:2rem;
-    margin-bottom:2rem;
-}
-.leftParag,.rightParag{
-    display:inline-block;
-    font-size:2.2rem;
-}
-.leftParag{
-    text-align:right;
-    width:48%;
-    margin-right:2rem;
-}
-.rightParag{
-    width:45%;
-}
-#dataBulletin{
-    background-image: url("../images/databg.png");
-    padding:2rem 7rem;
-    background-size:cover;
-    margin:0 1rem;
-}
-.outer-frame{
-    border:5px solid white;
-    padding:0.6rem;
-}
-.inner-content{
-    text-align:center;
-    background-color:white;
-    padding:2rem;
-}
-.dataIcon{
-    width:4rem;
-    height:4rem;
-}
-.dataBlock{
-    display:inline-block;
-    margin:0 5rem;
-}
-.dataBlock h2{
-    font-size:2rem;
-    margin:0.6rem 0;
-}
-.number{
-    color: #351f67;
-    font-size:3rem;
-}
-.timeTree{
-    position:relative;
-    background:url("../images/timeTree.png") no-repeat;
-    background-size:contain;
-    height:62rem;
-}
-.news{
-    text-align:center;
-    margin-top:10rem;
-}
-.leftContent,.rightContent,.middleContent{
-    display:inline-block;
-    vertical-align:top;
-}
-.leftContent{
-    text-align:right;
-    position:absolute;
-    top:23.5rem;
-    left:6%;
-    font-size:2rem;
-}
-.leftSecondTip{
-    margin-top:7.2rem;
-}
-.leftThirdTip{
-    margin-top:6.7rem;
+    font-family: "NotoSansCJK-Medium-5", 'Microsoft YaHei', sans-serif;
 }
 
-.rightContent{
-    position:absolute;
-    top:21.4rem;
-    right:4.1%;
-    font-size:2rem;
+.title {
+    text-align: center;
+    padding: 4rem;
 }
-.rightFirstTip{
-    max-width:300px;
+
+.text {
+    font-size: 4rem;
+    font-weight: bold;
+    border: 2px double #ccc;
+    display: inline-block;
+    padding: 0.2rem 1.2rem;
+    text-justify: newspaper
 }
-.rightSecondTip{
-    max-width:300px;
-    margin-top:5rem;
+
+.content {
+    padding: 2rem 5rem;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    column-count: 2;
+    column-gap: 8rem;
 }
-.rightThirdTip{
-    max-width:360px;
-    margin-top:5rem;
+
+/*.leftParag,.rightParag{*/
+/*display:inline-block;*/
+/*font-size:2.2rem;*/
+/*}*/
+/*.leftParag{*/
+/*text-align:right;*/
+/*width:48%;*/
+/*margin-right:2rem;*/
+/*}*/
+/*.rightParag{*/
+/*width:45%;*/
+/*}*/
+#dataBulletin {
+    background-image: url("../images/databg.png");
+    padding: 2rem 4rem;
+    background-size: cover;
+    margin: 0 1rem;
 }
+
+.outer-frame {
+    border: 5px solid white;
+    padding: 0.6rem;
+}
+
+.inner-content {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+}
+
+.dataIcon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.dataBlock {
+    width: 20%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.dataBlock h2 {
+    font-size: 2rem;
+    margin: 0.6rem 0;
+}
+
+.number {
+    color: #351f67;
+    font-size: 3rem;
+}
+
+.timeTree {
+    position: relative;
+    height: 65rem;
+}
+
+.news {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.leftContent, .rightContent, .middleContent {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.leftContent {
+    text-align: right;
+    font-size: 2rem;
+}
+
+.leftFirstTip {
+    margin-top: 17rem;
+}
+
+.leftSecondTip {
+    margin-top: 9.2rem;
+}
+
+.leftThirdTip {
+    margin-top: 9.5rem;
+}
+
+.rightContent {
+    font-size: 2rem;
+}
+
+.rightFirstTip {
+    margin-top: 14rem;
+}
+
+.rightSecondTip {
+    max-width: 300px;
+    margin-top: 6.7rem;
+}
+
+.rightThirdTip {
+    max-width: 350px;
+    margin-top: 6.7rem;
+}
+
 /*.leftContent p,.rightContent p{
     max-width:300px;
 }*/
-.middleContent{
-    font-size:2.2rem;
-    font-weight:bold;
+.tree-content {
+    height: 90%;
 }
-.middleContent ul{
-    list-style:none;
-    position:absolute;
-    top:35.5%;
-    left:40%;
+
+.middleContent {
+    font-size: 2rem;
+    font-weight: bold;
+    background: url("../images/timeTree.png") no-repeat center;
+    background-size: 200% 100%;
+    width: 37%;
+    height: 100%;
 }
-.firstLi{
-    position:absolute;
-    top:34.5%;
-    left:40%;
+
+.middleContent ul {
+    display: inline-block;
+    list-style: none;
 }
-.secondLi{
-    position:absolute;
-    top:32%;
-    left:56%;
+
+.firstLi {
+    position: absolute;
+    top: 32.5%;
+    left: 37%;
 }
-.thirdLi{
-    position:absolute;
-    top:50%;
-    left:39%;
+
+.secondLi {
+    position: absolute;
+    top: 28%;
+    left: 56%;
 }
-.fourthLi{
-    position:absolute;
-    top:43.5%;
-    left:56%;
+
+.thirdLi {
+    position: absolute;
+    top: 51%;
+    left: 37%;
 }
-.fifthLi{
-    position:absolute;
-    top:65%;
-    left:39%;
+
+.fourthLi {
+    position: absolute;
+    top: 42.5%;
+    left: 56%;
 }
-.sixthLi{
-    position:absolute;
-    top:57.5%;
-    left:56%;
+
+.fifthLi {
+    position: absolute;
+    top: 70%;
+    left: 37%;
 }
-footer{
-    background-color:#212121;
-    padding-top:3rem;
-    padding-bottom:0.5rem;
-    text-align:center;
+
+.sixthLi {
+    position: absolute;
+    top: 61.5%;
+    left: 56%;
 }
-.contactUSTitle{
-    margin-bottom:2rem;
+
+footer {
+    background-color: #212121;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
 }
-.contactUSText{
-    display:inline-block;
-    padding:0 3rem;
-    color:white;
-    font-weight:bold;
-    font-size:3.4rem;
-    border:1px solid #b5b5b5;
+
+.contactUSTitle {
+    margin-bottom: 2rem;
 }
-.footerMiddle,.footerSide{
-    display:inline-block;
-    vertical-align:top;
-    text-align:center;
+
+.contactUSText {
+    display: inline-block;
+    padding: 0 3rem;
+    color: white;
+    font-weight: bold;
+    font-size: 3.4rem;
+    border: 1px solid #b5b5b5;
 }
-.footerBlock{
-    margin:2rem 4rem;
+
+.footerMiddle, .footerSide {
+    width: 30%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 2rem 0;
 }
-.footerBlockTitle{
-    margin-bottom:0.5rem;
-    font-size:2rem;
+
+.footerBlock {
+    margin: 2rem 4rem;
 }
-.footerBlockTitleText{
-    display:inline-block;
-    padding:0 1rem;
-    border:1px solid #b5b5b5;
-    color:#00ffff;
+
+.footerBlockTitle {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
 }
-.message{
-    margin:1rem 0;
-    font-size:1.7rem;
-    color:white;
-    letter-spacing:1px;
+
+.footerBlockTitleText {
+    display: inline-block;
+    padding: 0 1rem;
+    border: 1px solid #b5b5b5;
+    color: #00ffff;
 }
-#purpose{
-    color:#dfdfdf;
-    font-size:2.5rem;
-    font-weight:bold;
-    margin-top:2rem;
+
+.message {
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#purpose {
+    color: #dfdfdf;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    html, body {
+        font-size: 8px;
+    }
+
+    .video-wrapper {
+        width: 100%;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .dataBlock {
+        width: 24%;
+        margin: 0;
+    }
+
+    .content {
+        column-gap: 3rem;
+
+    }
+
+    /*.leftContent{*/
+    /*position: absolute;*/
+    /*top: 6%;*/
+    /*left: 3%;*/
+    /*text-align: center;*/
+    /*width: 150px;*/
+    /*}*/
+    /*.rightContent{*/
+    /*position: absolute;*/
+    /*top: 7%;*/
+    /*left: 78%;*/
+    /*width: 140px;*/
+    /*}*/
+    /*.timeTree{*/
+    /*height: 500px;*/
+    /*}*/
+    /*.middleContent{*/
+    /*width: 100%;*/
+    /*}*/
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    html, body {
+        font-size: 6px;
+    }
+
+    .top-text {
+        margin-top: 15px;
+    }
+
+    .dataBlock {
+        width: 45%;
+        margin: 0;
+    }
+
+    .content {
+        column-count: 1;
+    }
+
+    .footerSide {
+        width: 49%;
+    }
+
+    .footerMiddle {
+        display: none;
+    }
+
+    .footerBlock {
+        margin: 2rem 0;
+    }
+
+    .middleContent {
+        width: 100%;
+        background-size: 160% 100%;
+    }
+
+    .leftContent {
+        position: absolute;
+        top: -4%;
+        left:13%;
+        text-align: center;
+    }
+
+    .rightContent {
+        position: absolute;
+        top: -3%;
+        left: 57%;
+        width: 150px;
+    }
+
+    .timeTree {
+        height: 300px;
+    }
+
+    .firstLi {
+        top: 35.5%;
+        left: 22%;
+    }
+
+    .secondLi {
+        top: 31%;
+        left: 62%;
+    }
+
+    .thirdLi {
+        top: 54%;
+        left: 22%;
+    }
+
+    .fourthLi {
+        top: 45.5%;
+        left: 62%;
+    }
+
+    .fifthLi {
+        top: 73%;
+        left: 22%;
+    }
+
+    .sixthLi {
+        top: 64.5%;
+        left: 62%;
+    }
+
+    .leftFirstTip {
+        margin-top: 16rem;
+    }
+
+    .leftSecondTip {
+        margin-top: 4.5rem;
+    }
+
+    .leftThirdTip {
+        margin-top: 3.2rem;
+    }
+
+    .rightFirstTip {
+        margin-top: 14rem;
+    }
+
+    .rightSecondTip {
+        margin-top: 3.2rem;
+    }
+
+    .rightThirdTip {
+        margin-top: 3rem;
+    }
 }

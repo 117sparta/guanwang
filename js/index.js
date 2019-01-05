@@ -16,13 +16,61 @@
     dataBulletin[0].style.height = videoEle.clientHeight/5;
 }*/
 window.onscroll = function () {
-    let t = document.documentElement.scrollTop || document.body.scrollTop;
-    let navList = document.getElementsByClassName("top-nav");
-    let videoEle = document.getElementById("videoEle");
-    if(t>videoEle.clientHeight){
-        navList[0].style.backgroundColor="#110c1e";
+    let t = document.documentElement.scrollTop || document.body.scrollTop
+    let navList = document.getElementsByClassName("top-nav")
+    let videoEle = document.getElementById("videoEle")
+    if (t > videoEle.clientHeight) {
+        navList[0].style.backgroundColor = "#110c1e"
     }
-    else if(t<videoEle.clientHeight){
-        if(navList[0].style) navList[0].removeAttribute("style");
+    else if (t < videoEle.clientHeight) {
+        if (navList[0].style) navList[0].removeAttribute("style")
     }
-};
+}
+$(function () {
+    let count_times = 0
+    let count_degree = 0
+    let count_min = 0
+    let count_gun =0
+    let times_id = setInterval(function () {
+        count_times += parseInt(Math.random() * 8) + 1
+        $("#count_times").html(count_times)
+        if (count_times > 420) {
+            clearInterval(times_id)
+            times_id=setInterval(function () {
+                count_times += parseInt(Math.random() * 5) + 1
+                $("#count_times").html(count_times)
+            },60000)
+        }
+    }, 100)
+    let degree_id = setInterval(function () {
+        count_degree += parseInt(Math.random() * 200) + 1
+        $("#count_degree").html(count_degree)
+        if(count_degree>10670){
+            clearInterval(degree_id)
+            degree_id=setInterval(function () {
+                count_degree += parseInt(Math.random() * 100) + 1
+                $("#count_degree").html(count_degree)
+            },60000)
+        }
+    }, 100)
+    let min_id = setInterval(function () {
+        count_min += parseInt(Math.random() * 600) + 1
+        $("#count_min").html(count_min)
+        if(count_min>31235){
+            clearInterval(min_id)
+            min_id=setInterval(function () {
+                count_min += parseInt(Math.random() * 60) + 1
+                $("#count_min").html(count_min)
+            },60000)
+        }
+    }, 100)
+    let gun_id = setInterval(function () {
+        count_gun += parseInt(Math.random() * 3) + 1
+        if(count_gun>200){
+            count_gun=200
+            clearInterval(gun_id)
+        }
+        $("#count_gun").html(count_gun)
+    }, 100)
+
+})
