@@ -14,9 +14,10 @@ html, body {
     width: 100%;
 }
 
-.video-wrapper {
-    width: 70%;
-    margin: auto;
+.video-ele{
+    width:100%;
+    height:100%;
+    object-fit: fill;
 }
 
 .phone {
@@ -67,6 +68,7 @@ html, body {
 
 #videoWrapper {
     position: relative;
+    width: 100%;
 }
 
 .top-nav {
@@ -81,7 +83,7 @@ html, body {
     box-shadow: 0 0 5px black;
     font-family: 'NotoSansCJK-Medium-5', 'Microsoft YaHei', sans-serif;
     background-color: #d4d6d5;
-    background-color: rgba(212, 214, 213, 0.65);
+    background-color: rgba(212, 214, 213, 0.15);
     z-index: 4;
 }
 
@@ -199,11 +201,12 @@ html, body {
 .timeTree {
     position: relative;
     height: 65rem;
+    margin-top: 5rem;
 }
 
 .news {
     text-align: center;
-    margin-top: 5rem;
+
 }
 
 .leftContent, .rightContent, .middleContent {
@@ -252,6 +255,7 @@ html, body {
 }*/
 .tree-content {
     height: 90%;
+    position: relative;
 }
 
 .middleContent {
@@ -270,37 +274,37 @@ html, body {
 
 .firstLi {
     position: absolute;
-    top: 32.5%;
+    top: 25.5%;
     left: 37%;
 }
 
 .secondLi {
     position: absolute;
-    top: 28%;
+    top: 21%;
     left: 56%;
 }
 
 .thirdLi {
     position: absolute;
-    top: 51%;
+    top: 47%;
     left: 37%;
 }
 
 .fourthLi {
     position: absolute;
-    top: 42.5%;
+    top: 37.5%;
     left: 56%;
 }
 
 .fifthLi {
     position: absolute;
-    top: 70%;
+    top: 68%;
     left: 37%;
 }
 
 .sixthLi {
     position: absolute;
-    top: 61.5%;
+    top: 58%;
     left: 56%;
 }
 
@@ -386,26 +390,6 @@ footer {
 
     }
 
-    /*.leftContent{*/
-    /*position: absolute;*/
-    /*top: 6%;*/
-    /*left: 3%;*/
-    /*text-align: center;*/
-    /*width: 150px;*/
-    /*}*/
-    /*.rightContent{*/
-    /*position: absolute;*/
-    /*top: 7%;*/
-    /*left: 78%;*/
-    /*width: 140px;*/
-    /*}*/
-    /*.timeTree{*/
-    /*height: 500px;*/
-    /*}*/
-    /*.middleContent{*/
-    /*width: 100%;*/
-    /*}*/
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -413,7 +397,6 @@ footer {
     html, body {
         font-size: 6px;
     }
-
     .top-text {
         margin-top: 15px;
     }
@@ -426,9 +409,12 @@ footer {
     .content {
         column-count: 1;
     }
-
+    footer{
+        padding: 0;
+    }
     .footerSide {
         width: 49%;
+        margin: 0;
     }
 
     .footerMiddle {
@@ -442,58 +428,63 @@ footer {
     .middleContent {
         width: 100%;
         background-size: 160% 100%;
+        height: 40rem;
     }
 
     .leftContent {
         position: absolute;
-        top: -4%;
+        top: 32%;
         left:13%;
         text-align: center;
     }
-
+    .timeTree {
+        height: auto;
+        box-sizing: border-box;
+    }
+    .tree-content {
+        position: relative;
+    }
     .rightContent {
         position: absolute;
-        top: -3%;
+        top: 27%;
         left: 57%;
         width: 150px;
     }
 
-    .timeTree {
-        height: 300px;
-    }
+
 
     .firstLi {
-        top: 35.5%;
+        top: 24.5%;
         left: 22%;
     }
 
     .secondLi {
-        top: 31%;
+        top: 20%;
         left: 62%;
     }
 
     .thirdLi {
-        top: 54%;
+        top: 46%;
         left: 22%;
     }
 
     .fourthLi {
-        top: 45.5%;
+        top: 36.5%;
         left: 62%;
     }
 
     .fifthLi {
-        top: 73%;
+        top: 67%;
         left: 22%;
     }
 
     .sixthLi {
-        top: 64.5%;
+        top: 57.5%;
         left: 62%;
     }
 
     .leftFirstTip {
-        margin-top: 16rem;
+        margin-top: 0;
     }
 
     .leftSecondTip {
@@ -505,7 +496,7 @@ footer {
     }
 
     .rightFirstTip {
-        margin-top: 14rem;
+        margin-top: 0;
     }
 
     .rightSecondTip {
@@ -515,4 +506,5 @@ footer {
     .rightThirdTip {
         margin-top: 3rem;
     }
+
 }
