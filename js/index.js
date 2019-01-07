@@ -18,19 +18,27 @@
 window.onscroll = function () {
     let t = document.documentElement.scrollTop || document.body.scrollTop
     let navList = document.getElementsByClassName("top-nav")
+
     let videoEle = document.getElementById("videoEle")
     if (t > videoEle.clientHeight) {
         navList[0].style.backgroundColor = "#110c1e"
+        navList[0].style.color = "#ffffff"
+        $("#phoneIcon").attr('src','./images/phone.png')
+        $("#mailIcon").attr('src','./images/mail.png')
     }
     else if (t < videoEle.clientHeight) {
         if (navList[0].style) navList[0].removeAttribute("style")
+        $("#phoneIcon").attr('src','./images/phone1.png')
+        $("#mailIcon").attr('src','./images/mail1.png')
     }
 }
 $(function () {
-    if (window.screen.width > 480) {
+    if (window.screen.width > 1024) {
         $("#videoWrapper").css({
-            height: window.screen.height * 0.75 + 'px'
+            height: window.screen.height * 0.7 + 'px'
         })
+    }else {
+        $("#videoWrapper").removeAttribute("style")
     }
 
 
