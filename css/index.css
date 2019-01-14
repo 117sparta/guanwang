@@ -194,7 +194,8 @@ html, body {
 }
 
 .number {
-    color: #351f67;
+    /*color: #351f67;*/
+    color: #351f67cc;
     font-size: 3rem;
 }
 

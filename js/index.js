@@ -15,6 +15,7 @@
     let videoEle = document.getElementById("videoEle");
     dataBulletin[0].style.height = videoEle.clientHeight/5;
 }*/
+let flag = true
 window.onscroll = function () {
     let t = document.documentElement.scrollTop || document.body.scrollTop
     let navList = document.getElementsByClassName("top-nav")
@@ -25,34 +26,24 @@ window.onscroll = function () {
         navList[0].style.color = "#ffffff"
         $("#phoneIcon").attr('src', './images/phone.png')
         $("#mailIcon").attr('src', './images/mail.png')
+
     }
     else if (t < videoEle.clientHeight) {
         if (navList[0].style) navList[0].removeAttribute("style")
         $("#phoneIcon").attr('src', './images/phone1.png')
         $("#mailIcon").attr('src', './images/mail1.png')
     }
-}
+    let numText = document.querySelector('.number')
 
-$(function () {
-    changeVideoSize()
-    //监听窗口大小变化
-    $(window).resize(function () {
-        changeVideoSize()
-    })
-    //调整视频大小
-    function changeVideoSize(){
-        let videoWrap = $("#videoWrapper")
-        if (window.screen.width > 1024) {
-            videoWrap.css({
-                height: window.screen.height * 0.7 + 'px'
-            })
-        } else {
-            if (videoWrap.attr('style')) {
-                videoWrap.attr('style',null)
-            }
+    if (t + window.innerHeight >= (numText.offsetTop + numText.offsetHeight / 2)) {
+        if (flag) {
+            scrollNum()//数字开始滚动
+            flag = false
         }
     }
+}
 
+function scrollNum() {
     let count_times = 0
     let count_degree = 0
     let count_min = 0
@@ -98,5 +89,26 @@ $(function () {
         }
         $("#count_gun").html(count_gun)
     }, 100)
+}
 
+$(function () {
+    changeVideoSize()
+    //监听窗口大小变化
+    $(window).resize(function () {
+        changeVideoSize()
+    })
+
+    //调整视频大小
+    function changeVideoSize() {
+        let videoWrap = $("#videoWrapper")
+        if (window.screen.width > 1024) {
+            videoWrap.css({
+                height: window.screen.height * 0.7 + 'px'
+            })
+        } else {
+            if (videoWrap.attr('style')) {
+                videoWrap.attr('style', null)
+            }
+        }
+    }
 })
