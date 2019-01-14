@@ -23,24 +23,35 @@ window.onscroll = function () {
     if (t > videoEle.clientHeight) {
         navList[0].style.backgroundColor = "#110c1e"
         navList[0].style.color = "#ffffff"
-        $("#phoneIcon").attr('src','./images/phone.png')
-        $("#mailIcon").attr('src','./images/mail.png')
+        $("#phoneIcon").attr('src', './images/phone.png')
+        $("#mailIcon").attr('src', './images/mail.png')
     }
     else if (t < videoEle.clientHeight) {
         if (navList[0].style) navList[0].removeAttribute("style")
-        $("#phoneIcon").attr('src','./images/phone1.png')
-        $("#mailIcon").attr('src','./images/mail1.png')
+        $("#phoneIcon").attr('src', './images/phone1.png')
+        $("#mailIcon").attr('src', './images/mail1.png')
     }
 }
-$(function () {
-    if (window.screen.width > 1024) {
-        $("#videoWrapper").css({
-            height: window.screen.height * 0.7 + 'px'
-        })
-    }else {
-        $("#videoWrapper").removeAttribute("style")
-    }
 
+$(function () {
+    changeVideoSize()
+    //监听窗口大小变化
+    $(window).resize(function () {
+        changeVideoSize()
+    })
+    //调整视频大小
+    function changeVideoSize(){
+        let videoWrap = $("#videoWrapper")
+        if (window.screen.width > 1024) {
+            videoWrap.css({
+                height: window.screen.height * 0.7 + 'px'
+            })
+        } else {
+            if (videoWrap.attr('style')) {
+                videoWrap.attr('style',null)
+            }
+        }
+    }
 
     let count_times = 0
     let count_degree = 0
