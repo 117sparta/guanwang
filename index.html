@@ -12,8 +12,8 @@
 <body>
 <div id="wrap">
     <div id="videoWrapper">
-        <video  id="videoEle" src="./images/highway-loop.mp4" autoplay muted="muted" loop class="video-ele"></video>
-        <div class="content1">
+        <video  id="videoEle" src="./images/lhighway-loop.mp4" autoplay muted="muted" loop class="video-ele"></video>
+        <div class="content1" >
             <p class="top-text">与时尚同在，与环保同行</p>
             <p class="middle-text">体验轿跑舒适，酷享低碳时尚</p>
             <p class="bottom-text">城市的守护者，生活的开拓者，你我的新选择</p>
@@ -24,11 +24,21 @@
     </div>
     <nav class="top-nav">
         <div class="phone">
-            <img id="phoneIcon" src="./images/phone1.png" class="phoneIcon" />
+            <img id="phoneIcon" src="./images/phone.png" class="phoneIcon" />
             <span>020-1234567</span>
         </div>
         <div class="linkAndMail">
-            <img id="mailIcon" class="mailIcon" src="./images/mail1.png"/>
+            <img id="mailIcon" class="mailIcon" src="./images/mail.png"/>
+            <span>qwerfdghcn@163.com</span>
+        </div>
+    </nav>
+    <nav class="top-nav" style="background-color: #000; visibility: hidden;">
+        <div class="phone">
+            <img src="./images/phone.png" class="phoneIcon" />
+            <span>020-1234567</span>
+        </div>
+        <div class="linkAndMail">
+            <img class="mailIcon" src="./images/mail.png"/>
             <span>qwerfdghcn@163.com</span>
         </div>
     </nav>
@@ -68,8 +78,8 @@
                         <h2>充电电量（度）</h2>
                         <h2 class="number" id="count_degree">0</h2>
                     </div>
-                    <div class="dataBlock" style="padding-top: 50px;background: url(images/time.png) no-repeat;background-size: 100px;background-position: 50% -20px;">
-                        <!--<img class="dataIcon" src="./images/time.png" />-->
+                    <div class="dataBlock">
+                        <img class="dataIcon" src="./images/time.png" />
                         <h2>充电时间（分）</h2>
                         <h2 class="number" id="count_min">0</h2>
                     </div>
@@ -149,11 +159,6 @@
         </div>
     </footer>
 </div><!--end div wrap-->
-<script>
-    setInterval(()=>{
-        $(".content1").toggle();
-        $(".content2").toggle();
-    },12000);
-</script>
+
 </body>
 </html>
