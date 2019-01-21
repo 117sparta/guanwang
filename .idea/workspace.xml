@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ac72a19-7ea3-4070-b90c-e48f3a96aa8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -134,14 +131,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="787" />
+          <entry key="css" value="1010" />
           <entry key="html" value="134" />
           <entry key="js" value="1721" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="787" />
+          <entry key="CSS" value="1010" />
           <entry key="HTML" value="134" />
           <entry key="JavaScript" value="1721" />
         </counts>
@@ -169,8 +166,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="219" column="12" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+            <state relative-caret-position="120">
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -178,7 +175,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
+            <state relative-caret-position="-59">
               <caret line="108" column="49" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -239,7 +236,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-67" />
     <option name="width" value="1005" />
     <option name="height" value="1072" />
@@ -366,7 +363,7 @@
       <workItem from="1547866452902" duration="675000" />
       <workItem from="1547968938946" duration="1701000" />
       <workItem from="1547983045739" duration="5123000" />
-      <workItem from="1548037489361" duration="7104000" />
+      <workItem from="1548037489361" duration="11818000" />
     </task>
     <task id="LOCAL-00001" summary="新闻资讯进行字体更改">
       <created>1543667518927</created>
@@ -428,7 +425,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148438000" />
+    <option name="totallyTimeSpent" value="153152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1390" height="747" extended-state="6" />
@@ -529,7 +526,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
+        <state relative-caret-position="-59">
           <caret line="108" column="49" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -551,8 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="219" column="12" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+        <state relative-caret-position="120">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
         </state>
       </provider>
     </entry>
