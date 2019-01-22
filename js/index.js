@@ -105,8 +105,9 @@ $(function () {
         }
     })
 
-    //调整视频大小
+/*    //调整视频大小
     function changeVideoSize() {
+        console.log(window.screen.height * 0.7 )
         let videoWrap = $("#videoWrapper")
         if (window.screen.width > 1024) {
             videoWrap.css({
@@ -122,7 +123,7 @@ $(function () {
     //监听窗口大小变化，适应视频大小
     $(window).resize(function () {
         changeVideoSize()
-    })
+    })*/
 
     //监听视频加载完成，切换视频文字，调整顶部导航条文字颜色
     var videoEle = document.querySelector("#videoEle")
